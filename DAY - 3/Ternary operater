@@ -1,0 +1,12 @@
+package day3;
+
+import java.util.Scanner;
+
+public class ternaryoperater {
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+        int age=sr.nextInt();
+        String a=(age%2==0)? "odd":"even";
+        System.out.println(a);
+    }
+}

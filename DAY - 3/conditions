@@ -1,0 +1,16 @@
+package day3;
+import java.util.Scanner;
+public class conditions {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a=input.nextInt();
+        int b=input.nextInt();
+        if(a==b){
+            System.out.println("it is equal");
+        }
+        else{
+            System.out.println("it is not equal");
+        }
+
+    }
+}

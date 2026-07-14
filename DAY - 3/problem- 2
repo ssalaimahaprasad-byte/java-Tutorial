@@ -1,0 +1,11 @@
+package day3;
+import java.util.Scanner;
+public class prb2 {//   table
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+        int java=22;
+        for(int i=1;i<=10;i++){
+            System.out.println(i+"x"+java+"="+java*i);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        int num1=input.nextInt();
+        byte num2=input.nextByte();
+        short num3=input.nextShort();
+        long num4=input.nextLong();
+        char name=input.next().charAt(0);
+        float num5=input.nextFloat();
+        double num6=input.nextDouble();
+        String c=input.next();
+        String b =input.nextLine();
+
+
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println(num3);
+        System.out.println(num4);
+        System.out.println(name);
+        System.out.println(num5);
+        System.out.println(num6);
+        System.out.println(c);
+        System.out.println(b);
+    }
+}

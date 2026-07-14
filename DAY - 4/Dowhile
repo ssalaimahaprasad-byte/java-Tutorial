@@ -1,0 +1,24 @@
+package day4;
+import java.util.Scanner;
+import java.util.Random;
+public class dowhile {
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+        Random rand=new Random();
+        int key=rand.nextInt(100);
+        int guess;
+        do{
+            System.out.println("Enter the value of your guess");
+            guess=sr.nextInt();
+            if(guess>key){
+                System.out.println("guess is to high");
+            }
+            else if(guess<key){
+                System.out.println("guess is low");
+            }
+        }while(key!=guess);
+        System.out.println("you guesed it");
+
+    }
+
+}

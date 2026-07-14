@@ -1,0 +1,17 @@
+package day3;
+
+import java.util.Scanner;// how num in this op count and tell it
+
+public class prb4 {
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+        int num = sr.nextInt();
+        int count = 0;
+        while (num != 0) {
+            int pop = num % 10;
+            count++;
+            num/=10;
+        }
+        System.out.print(count);
+    }
+}

@@ -1,0 +1,16 @@
+package day4;
+import java.util.Scanner;
+public class Numbers {
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+        int b = sr.nextInt();
+        while (b != 0) {
+            int pop = b % 10;
+            if (pop == 0) {
+                System.out.println("my number contains zero");
+                break;
+            }
+            b=b/10;
+        }
+    }
+}

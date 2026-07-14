@@ -1,0 +1,15 @@
+package day2;
+import java.util.Scanner;
+public class conditional {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a = input.nextInt();
+        int b = input.nextInt();
+        int c = input.nextInt();
+        int d = input.nextInt();
+        int e = input.nextInt();
+        float f = (a + b + c + b + c) / 5;
+
+        System.out.println(f);
+    }
+}

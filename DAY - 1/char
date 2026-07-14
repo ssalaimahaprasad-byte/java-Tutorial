@@ -1,0 +1,15 @@
+public class salai {
+    public static void main(String[] args) {
+        char a = (char)100000000000l;
+        byte b = (byte)129;
+        float c= (int)99908888888l;
+        char d=65;
+
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+
+    }
+}

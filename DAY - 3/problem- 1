@@ -1,0 +1,13 @@
+package day3;
+
+import java.util.Scanner;// in switch statement// 65 is a, 66 is b like that......
+
+public class prb1 {
+    public static void main(String[] arge) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter a number a 65 to 90:");
+        int p=s.nextInt();
+        char a=(char)p;
+        System.out.println("Character is: "+a);
+    }
+}
