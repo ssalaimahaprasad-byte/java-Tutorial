@@ -1,0 +1,22 @@
+package day8;
+import java.util.Scanner;
+public class linear_search {
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+        int  n= sr.nextInt();
+        int[] arr=new int[n];
+        int target = sr.nextInt();
+        for(int i=0;i<n;i++){
+            arr[i]=sr.nextInt();
+        }
+        System.out.println(linear_search(arr, target));
+    }
+    static int linear_search(int[] arr, int target){
+        for(int i=0;i<arr.length;i++){
+            if (arr[i]==target){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
