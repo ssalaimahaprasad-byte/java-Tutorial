@@ -1,1 +1,110 @@
+📅 Day 13 - Java OOP Concepts: Inheritance & Encapsulation
+📚 Topics Covered
+Inheritance
+Types of Inheritance
+Single Inheritance
+Multilevel Inheritance
+Hierarchical Inheritance
+Multiple Inheritance (using Interfaces)
+Method Overriding
+Encapsulation
+📖 What I Learned
+🔹 Inheritance
+Inheritance is an OOP concept where one class acquires the properties and methods of another class using the extends keyword. It helps in code reusability and establishes an IS-A relationship.
 
+Syntax:
+
+class Parent {
+    // properties and methods
+}
+
+class Child extends Parent {
+    // additional properties and methods
+}
+🔹 Types of Inheritance
+1. Single Inheritance
+One child class inherits from one parent class.
+
+Parent
+   ↑
+ Child
+2. Multilevel Inheritance
+A class inherits from another child class.
+
+Student
+   ↑
+Mentor
+   ↑
+HOD
+3. Hierarchical Inheritance
+Multiple child classes inherit from the same parent class.
+
+      Student
+      /     \
+ Mentor     HOD
+4. Multiple Inheritance
+Java does not support multiple inheritance using classes because it can lead to ambiguity (Diamond Problem).
+
+It is achieved using Interfaces.
+
+Interface A
+      \
+       \
+     Interface B
+         |
+       Class C
+🔹 Method Overriding
+Method Overriding occurs when a child class provides its own implementation of a method that already exists in the parent class.
+
+Example:
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+🔹 Encapsulation
+Encapsulation is the process of hiding data by making variables private and accessing them using public methods (getters and setters).
+
+Example:
+
+class Student {
+    private int studentId;
+
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
+    }
+
+    public int getStudentId() {
+        return studentId;
+    }
+}
+💻 Programs Practiced
+Single Inheritance Example
+Multilevel Inheritance (Student → Mentor → HOD)
+Hierarchical Inheritance
+Multiple Inheritance using Interfaces
+Method Overriding
+Encapsulation using Private Variables
+Getter and Setter Methods
+Student Management System using OOP Concepts
+🎯 Key Takeaways
+Learned how inheritance promotes code reusability.
+Understood different types of inheritance in Java.
+Practiced multilevel inheritance using a Student Management System.
+Learned why Java doesn't support multiple inheritance with classes.
+Understood the difference between Method Overriding and Method Overloading.
+Learned how encapsulation protects data using private variables.
+Practiced creating and using getter and setter methods.
+Improved understanding of OOP principles in Java.
+🛠 Technologies Used
+Java
+IntelliJ IDEA / VS Code
+JDK 17
