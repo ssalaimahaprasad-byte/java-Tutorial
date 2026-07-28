@@ -1,4 +1,4 @@
-package day14;
+//package day14;
 abstract class emp {
     protected String name;
     protected int id;

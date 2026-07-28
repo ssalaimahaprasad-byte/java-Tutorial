@@ -8,7 +8,7 @@ interface C extends A{
 
 
 }
-class B implements C// using two interface
+class B implements C{// using two interface
     public void a(){
         System.out.println("h");
         
